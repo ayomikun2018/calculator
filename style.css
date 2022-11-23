@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Rubik:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #faebe4;
+}
+.calculator {
+  
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 40vw;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  border: 4px solid rgba(181,157,136,255);
+  box-shadow: -4px 7px 18px -1px rgba(207,165,165,0.75);
+ -webkit-box-shadow: -4px 7px 18px -1px rgba(207,165,165,0.75);
+ -moz-box-shadow: -4px 7px 18px -1px rgba(207,165,165,0.75);
+
+}
+
+.screen-container {
+  display: flex;
+  flex-direction: column;
+ 
+  font-weight: 700;
+  margin: 20px 0px;
+  height: 15rem;
+ 
+}
+
+.pre-screen {
+  border-radius: 2px;
+  font-size: 400;
+  /* border: 10px solid red; */
+  height: 3rem;
+  font-weight: 500;
+  font-size:20px;
+  border: none;
+  color: coral;
+  text-align: end;
+}
+.screen {
+  height: 7rem;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: end;
+ color: white;
+ border-radius: 5px;
+ border: none;
+ background-color:#feae8a;
+ box-shadow: -1px 24px 0px -18px rgba(254,174,138,0.5),-2px 58px 0px -47px 
+}
+.button-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border: none;
+  background-color: white;
+  /* border: 1px solid green; */
+  
+}
+.number{
+    border: none;
+    background-color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+.number:hover{
+    background-color: gainsboro;
+    transition: 0.4s ease-in-out;
+    color:#feae8a;;
+    cursor: pointer;
+}
+
+.backspace{
+    color:#feae8a;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+.equal{
+    grid-row: span 2;
+    background-color: rgba(255,247,240,255);
+    color: #f1bea8;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
