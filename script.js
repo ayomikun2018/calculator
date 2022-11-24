@@ -31,7 +31,7 @@ $("#clear").click(function() {
     $("#pre-screen").val("0");
     $("#screen").val("0");
 });
-Evaluation
+// Evaluation
 $("#equal").click(function() {
     let result;
     //Check for syntax error
@@ -57,10 +57,7 @@ $("#equal").click(function() {
 });
 // if you click on number not after clicking on equal
 // let solution display on inputted numbers then whatever you input.
-// adding solution to other inputted numbers and then performing the action
-
-
-
+// // adding solution to other inputted numbers and then performing the action
 
 
 
@@ -102,19 +99,15 @@ $("#equal").click(function() {
 //       case "":
 //         screen.innerText = screen.innerText.slice(0, -1);
 //         break;
-//       case "=":
-//         // try {
-//             screen.innerText = eval(screen.innerText);
-//         // } catch {
-//         //     screen.innerText = "invalid!"
-//         // }
+//       case "=": 
+//            try{
+//                 screen.innerText = eval(screen.innerText);
+//             } catch {
+//                 screen.innerText = "Error"
+//             }
 //         break;
 //       default:
 //         screen.innerText  += e.target.innerText;
 //     }
 //   });
-// //   backspace.addEventListener('click', ()=>{
-// //     // screen.innerHTML  += e.target.innerHTML;
-// //     screen.innerHTML= screen.substring()
-// //   })
 // });
